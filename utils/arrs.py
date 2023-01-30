@@ -13,6 +13,9 @@ def get(array, index, default=None):
     """
     if index < 0:
         return default
+    else:
+        if array == []:
+            return default
 
     return array[index]
 
